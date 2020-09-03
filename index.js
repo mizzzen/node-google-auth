@@ -33,7 +33,7 @@ const showOTPs = () => {
   clearConsoleAndScrollbackBuffer();
   Object.keys(secrets).forEach((keyName) => {
     const token = generateOTP(secrets[keyName]);
-    process.stdout.write(`--- ${keyName} --- | --- ${token} ---`)
+    process.stdout.write(`--- ${keyName} --- | --- ${token} ---\n`)
   });
 };
 
